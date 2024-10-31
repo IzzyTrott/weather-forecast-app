@@ -14,40 +14,51 @@
   </head>
   <body>
     <div class="app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city" class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button"/>
-      </form>
-    </header>
-    <main>
-      <h1>London</h1>
-      <div>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="city">London</h1>
+            <p>
+              Wednesday 14:54, overcast clouds
+              <br />
+              Humidity: <strong>91%</strong>, Wind: <strong>4.12km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-container">
+            <div class="weather-icon">☁️</div>
+            <div class="weather-temperature">14</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
         <p>
-          Wednesday 14:54, overcast clouds
-          <br />
-          Humidity: 91%, Wind: 4.12km/h
+          This project was coded by
+          <a href="https://github.com/IzzyTrott" target="_blank">Izzy Trott</a>,
+          is
+          <a
+            href="https://github.com/IzzyTrott/weather-forecast-app"
+            target="_blank"
+            >open-sourced on Github</a
+          >
+          and
+          <a href="https://it-weather-forecast-app.netlify.app" target="_blank"
+            >hosted on Netlify</a
+          >
+          👩🏼‍💻
         </p>
-      </div>
-      <div>☁️ 14°C</div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/IzzyTrott" target="_blank">Izzy Trott</a>,
-        is
-        <a
-          href="https://github.com/IzzyTrott/weather-forecast-app"
-          target="_blank"
-          >open-sourced on Github</a
-        >
-        and
-        <a href="https://it-weather-forecast-app.netlify.app" target="_blank"
-          >hosted on Netlify</a
-        >
-        👩🏼‍💻
-      </p>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>
