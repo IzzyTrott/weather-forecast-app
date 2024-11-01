@@ -30,17 +30,23 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="city" id="city">London</h1>
+            <h1 class="city" id="city"></h1>
             <p class="weather-details">
-              Wednesday 14:54, overcast clouds
+              <span id="dateTime">Wednesday 14:54</span>,
+              <span id="description">overcast clouds</span>
               <br />
-              Humidity: <strong>10</strong>, Wind:
-              <strong>4.12</strong>
+              Humidity: <strong id="humidity">10%</strong>, Wind:
+              <strong id="wind">4.12 km/h</strong>
             </p>
           </div>
 
           <div class="weather-container">
-            <div class="weather-icon" id="weather-icon">☁️</div>
+            <div id="weather-icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                class="weather-icon"
+              />
+            </div>
             <div class="weather-temperature" id="weather-temperature">14</div>
             <div class="weather-unit">°C</div>
           </div>
