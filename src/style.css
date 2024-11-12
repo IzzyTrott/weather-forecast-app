@@ -99,8 +99,8 @@ strong {
 }
 
 .forecast-icon {
-  text-align: center;
-  font-size: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-temperatures {
