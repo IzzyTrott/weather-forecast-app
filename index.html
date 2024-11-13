@@ -28,19 +28,17 @@
         </form>
       </header>
       <main>
-        <div class="weather-data">
-          <div>
-            <h1 class="city" id="city"></h1>
-            <p class="weather-details">
-              <span id="dateTime"></span>,
-              <span id="description"></span>
-              <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind"></strong>
-            </p>
-          </div>
+        <div>
+          <h1 class="city" id="city"></h1>
+          <p class="last-update">
+            Last updated:
+            <span id="dateTime"></span>
+          </p>
+        </div>
+        <p class="titles">Today's weather</p>
 
-          <div class="weather-container">
+        <div class="weather-data">
+          <div class="weather-temperature-container">
             <div id="weather-icon">
               <img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
@@ -50,8 +48,15 @@
             <div class="weather-temperature" id="weather-temperature"></div>
             <div class="weather-unit">°C</div>
           </div>
+
+          <div class="weather-details-container">
+            <div>Description:<strong id="description"></strong></div>
+            <div>Humidity: <strong id="humidity"></strong></div>
+            <div>Wind: <strong id="wind"></strong></div>
+          </div>
         </div>
 
+        <p class="titles">5 day forecast</p>
         <div class="weather-forecast" id="weather-forecast"></div>
       </main>
       <footer>
